@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+.home {
+    background-color: white;
+    font-family: sans-serif;
+    height: 100vh;
+    min-height: 100vh;
+    z-index: 1;
+}
+
+.home .order-pizza a {
+    display: block;
+    padding: 50px 25px;
+    background-image: url("/images/order/pizza-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 50vh;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.home .order-pizza h1 {
+    letter-spacing: 3px;
+    background: #d82a2a;
+    position: absolute;
+    top: 4.5em;
+    transform: skewY(-7deg);
+    padding: 10px 5px;
+    padding-right: 5vw;
+}
+.home .order-pizza h3 {
+    background: #49a167;
+    position: absolute;
+    bottom: 25px;
+    padding: 15px 10px;
+    border-radius: 3px;
+}
+
+.home .lookup-order {
+    padding: 20px 0;
+    text-align: center;
+    background: #d82a2a;
+}
+.home .lookup-order h2 {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.home .lookup-order .nav-search {
+    margin: 0 auto;
+}
+.home .lookup-order .nav-search .search-box input[type="text"] {
+    padding: 12px;
+    font-size: 1.3em;
+}
+
+.home .lookup-order .nav-search .search-btn button {
+    padding: 12px;
+    font-size: 1.3em;
+}
+
+.home .filler {
+    z-index: -2;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.612), 
+        rgba(0, 0, 0, 0.905)
+    ), 
+    url("/images/pizzashop.jpg");
+    background-position: center top;
+    background-size: 100% 40%;
+    height: 100%;
+}
+.home .filler p {
+    z-index: 0;
+    font-size: 30px;
+    letter-spacing: 3px;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+    position: relative;
+    top: 8vh;
+    left: 1em;
+    padding: 0 50px 0 20px;
+    background: black;
+    width: fit-content;
+    transform: skewY(-6deg);
+}
+
+
+
+@media (max-width : 550px) {
+    .home .order-pizza a {
+        height: 80vh;
+    }
+    .home .lookup-order .nav-search .search-box input[type="text"] {
+        padding: 8px;
+        font-size: 1em;
+    }
+    
+    .home .lookup-order .nav-search .search-btn button {
+        padding: 8px;
+        font-size: 1em;
+    }
+    .home .filler p {
+        display: none;
+    }
+    
+}

@@ -1,0 +1,48 @@
+/* Global Rulesets, Resets */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.612), 
+        rgba(0, 0, 0, 0.905)
+      ), 
+      url("/images/site-bg.jpg") no-repeat center top;
+    background-color: black;
+    background-attachment: fixed;
+}
+
+html {
+    height: 100%;
+}
+.app {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-container {
+    width: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+    box-shadow: 1px 1px 45px black, -1px -1px 45px black;
+}
+
+@media (max-width : 1600px) {
+    body {
+        background: none;
+        background-color: white;
+    }
+    .app-container {
+        width: 100%;
+        box-shadow: none;
+    }
+}

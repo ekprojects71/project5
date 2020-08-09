@@ -1,0 +1,59 @@
+.view-orders {
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    font-family: sans-serif;
+}
+
+.view-orders .order-content {
+    margin-bottom: 30px;
+}
+
+.view-orders .your-orders h1 {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+.view-orders .your-orders h1 span {
+    display: inline-block;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 0.8em;
+}
+
+.view-orders h2 {
+    padding: 15px;
+    color: white;
+    background: #d82a2a;
+}
+.view-orders h2 span {
+    display: inline-block;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 0.6em;
+}
+.view-orders h3 {
+    border-bottom: 1px solid black;
+}
+
+.view-orders .order-review {
+    padding: 20px;
+}
+
+.view-orders .cancel-order {
+    text-align: right;
+    padding: 20px;
+}
+.view-orders .cancel-order-btn {
+    padding: 10px 20px;
+    background: #d82a2a;
+    color: white;
+    font-size: 1.3em;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #505050;
+    border-radius: 10px;
+    text-align: right;
+}

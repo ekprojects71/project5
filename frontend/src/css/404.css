@@ -1,0 +1,11 @@
+.not-found {
+    background: white;
+    font-family: sans-serif;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.not-found h1 {
+    padding-top: 10vh;
+    padding-bottom: 25px;
+}

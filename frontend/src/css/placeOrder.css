@@ -1,0 +1,316 @@
+.place-order {
+    min-height: 100vh;
+    background: #e9e9e9;
+    font-family: sans-serif;
+}
+
+.place-order .title h1 {
+    text-align: center;
+    background: black;
+    color: white;
+    padding: 25px;
+}
+
+.place-order .hidden {
+    display: none;
+}
+
+
+.place-order .crust-type h2,
+.place-order .crust-size h2,
+.place-order .sauce h2,
+.place-order .cheese h2,
+.place-order .toppings h2,
+.place-order .beverages h2,
+.place-order .delivery-title h2,
+.place-order .summary-title h2 {
+    color: white;
+    background: #d82a2a;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* errors display */
+.place-order .errors {
+    padding: 20px;
+    background: rgb(255, 221, 221);
+}
+.place-order .errors h3 {
+    margin-bottom: 20px;
+}
+.place-order .errors p {
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
+
+/* base options */
+.place-order .base-options-list {
+    list-style-type: none;
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: auto;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.place-order .base-option {
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.place-order .base-option:last-child {
+    margin-right: 0;
+}
+
+.place-order input[type="radio"] {
+    display: none;
+}
+.place-order label {
+    color: #808080;
+    text-transform: capitalize;
+    font-size: 1.3em;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    width: 200px;
+    border: 2px solid #d3d3d3;
+    background: white;
+    border-radius: 10px;
+}
+.place-order input[type="radio"]:checked+label {
+    color: #d82a2a;
+    border: 2px solid #d82a2a;
+}
+.place-order label:hover {
+    border: 2px solid #db9494;
+}
+
+
+/* topping & beverage rulesets */
+.place-order .topping-options,
+.place-order .beverage-options {
+    width: 99%;
+    max-width: 99%;
+    margin: 0 auto;
+}
+
+.place-order .topping-options-list,
+.place-order .beverage-options-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 25px 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: max-content;
+    column-gap: 10px;
+    row-gap: 10px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 100%;
+}
+
+.place-order .topping-option,
+.place-order .beverage-option {
+    width: 100%;
+    overflow: hidden;
+}
+.place-order .topping-option h3,
+.place-order .beverage-option h3 {
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 10px;
+}
+.place-order .topping-option img {
+    width: 100%;
+    height: 205px;
+    object-fit: fill;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 3px solid #b4898900;
+    cursor: pointer;
+    filter: grayscale(0.8) brightness(0.5);
+}
+.place-order .beverage-option img {
+    width: 100%;
+    height: 195px;
+    object-fit: fill;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 3px solid #b4898900;
+    cursor: pointer;
+    filter: grayscale(0.8) brightness(0.5);
+}
+.place-order .beverage-option p {
+    font-size: 0.7em;
+}
+.place-order .topping-option:hover img,
+.place-order .beverage-option:hover img {
+    filter: grayscale(1.0) brightness(0.7);
+}
+.place-order .topping-option.selected h3,
+.place-order .beverage-option.selected h3 {
+    color: #d82a2a;
+}
+.place-order .topping-option.selected img,
+.place-order .beverage-option.selected img {
+    border: 3px solid #d82a2a;
+    filter: grayscale(0) brightness(1);
+}
+
+/* delivery info form */
+.place-order .delivery-info .delivery {
+    padding: 20px;
+    width: fit-content;
+    margin: 0 auto;
+}
+.place-order .delivery-info .delivery p {
+    font-size: 0.8em;
+}
+.place-order .delivery-info input {
+    padding: 3px;
+    margin-bottom: 15px;
+    width: 300px;
+}
+.place-order .delivery-info select {
+    padding: 3px;
+    margin-bottom: 15px;
+    width: 200px;
+}
+
+/* order summary - confirm order */
+.place-order .order-summary .summary-wrapper {
+    padding: 20px;
+    background: white;
+}
+.place-order .order-summary .summary-wrapper h3 {
+    margin-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+.place-order .order-summary .order-item {
+    margin-bottom: 20px;
+}
+.place-order .order-summary p {
+    text-transform: capitalize;
+}
+.place-order .order-summary .order-address p {
+    text-transform: initial;
+}
+.place-order .order-summary .order-address {
+    margin-bottom: 50px;
+}
+.place-order .order-summary .order-address .delivery-label {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+.place-order .order-summary .order-address .delivery-field {
+    margin-bottom: 10px;
+}
+.place-order .order-summary .none {
+    margin-bottom: 10px;
+    font-style: italic;
+}
+.place-order .order-summary .summary-wrapper .order-total h1 {
+    margin-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+.place-order .order-summary .summary-wrapper .order-total p {
+    font-size: 2em;
+}
+
+
+/* buttons */
+.place-order .order-submit button,
+.place-order .confirm-button button,
+.place-order .back-button button {
+    padding: 10px 20px;
+    background: #d82a2a;
+    color: white;
+    font-size: 1.3em;
+    cursor: pointer;
+    outline: none;
+    border: 1px solid #505050;
+    border-radius: 10px;
+}
+
+.place-order .confirm-button {
+    padding: 40px 0;
+    text-align: center;
+}
+.place-order .back-button {
+    background: white;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.place-order .order-submit {
+    background: white;
+    width: 100%;
+    padding: 50px 20px;
+    text-align: right;
+}
+
+
+@media (max-width : 1024px) {
+    .place-order .topping-options-list,
+    .place-order .beverage-options-list {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 20px;
+    }
+}
+@media (max-width : 768px) {
+    .place-order .topping-option img, 
+    .place-order .beverage-option img {
+        height: 160px;
+    }
+}
+@media (max-width : 600px) {
+    .place-order .topping-option img, 
+    .place-order .beverage-option img {
+        height: 160px;
+    }
+    .place-order .topping-options-list,
+    .place-order .beverage-options-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .place-order .order-submit {
+        text-align: center;
+    }
+}
+
+@media (max-width : 550px) {
+    .place-order .base-options-list {
+        flex-direction: column;
+        align-items: center;
+    }
+    .place-order .base-option {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .place-order .topping-options,
+    .place-order .beverage-options {
+        width: 85%;
+        max-width: 85%;
+    }
+    .place-order .topping-options-list,
+    .place-order .beverage-options-list {
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+    }
+    .place-order .topping-option img, 
+    .place-order .beverage-option img {
+        height: 155px;
+    }
+}
+@media (max-width : 500px) {
+    .place-order .topping-option img, 
+    .place-order .beverage-option img {
+        height: 105px;
+    }
+    .place-order .delivery-info .delivery {
+        padding: 20px 0;
+    }
+}

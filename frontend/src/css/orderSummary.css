@@ -1,0 +1,42 @@
+.order-review {
+    background: white;
+}
+.order-review .summary-wrapper {
+    padding: 20px;
+    background: white;
+}
+.order-review .summary-wrapper h3 {
+    margin-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+.order-review .order-item {
+    margin-bottom: 20px;
+}
+.order-review p {
+    text-transform: capitalize;
+}
+.order-review .order-address p {
+    text-transform: initial;
+}
+.order-review .order-address {
+    margin-bottom: 50px;
+}
+.order-review .order-address .delivery-label {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: bold;
+}
+.order-review .order-address .delivery-field {
+    margin-bottom: 10px;
+}
+.order-review .none {
+    margin-bottom: 10px;
+    font-style: italic;
+}
+.order-review .order-total h1 {
+    margin-bottom: 5px;
+    border-bottom: 1px solid black;
+}
+.order-review .order-total p {
+    font-size: 2em;
+}

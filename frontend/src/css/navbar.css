@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+.navbar {
+    width: 100%;
+    overflow: hidden;
+    background: #1b1b1b;
+    height: auto;
+    padding: 10px 0;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+.navbar .container {
+    max-width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar .nav-left {
+    flex-basis: 50%;
+}
+.navbar .logo {
+    max-width: 8rem;
+    overflow: hidden;
+    font-size: 100%;
+}
+.navbar .logo a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+.navbar .logo .img-wrapper {
+    margin: 0 auto;
+    text-align: center;
+}
+.navbar .logo img {
+    width: 100%;
+}
+.navbar .logo span {
+    font-size: 1.3rem;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.navbar .search {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navbar .search .label {
+    color: white;
+    margin-bottom: 5px;
+    font-size: 0.8em;
+}
+
+
+@media (max-width : 550px) {
+    .navbar .logo {
+        max-width: 3rem;
+    }
+    .navbar .logo span {
+        font-size: 1rem;
+    }
+
+    .navbar .search .label {
+        font-size: 0.6em;
+    }
+}
